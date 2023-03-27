@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Conway's Game of Life</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid justify-content-center">
+                <span class="navbar-brand mb-0 h1">Conway's Game of Life</span>
+            </div>
+        </nav>
+    </header>
+    <!-- ... -->
+    <div class="container">
+        <canvas id="gameCanvas" width="800" height="800"></canvas>
+        <div class="controls">
+            <div class="button-container">
+                <button id="startBtn" class="btn btn-primary">Start</button>
+                <button id="pauseBtn" class="btn btn-secondary">Pause</button>
+                <button id="stepBtn" class="btn btn-info">Step</button>
+                <button id="randomBtn" class="btn btn-warning">Randomize</button>
+            </div>
+            <div class="generation-counter">
+                Generation: <span id="generation">0</span>
+            </div>
+        </div>
+    </div>
+    <!-- ... -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
